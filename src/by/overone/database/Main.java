@@ -27,5 +27,23 @@ public class Main {
         System.out.println(addedUser);
         User addedUser1 = userService.addUser(new User("Nastya", "Kotobich", 21, "+375444123052"));
         System.out.println(addedUser1);
+
+        System.out.println();
+
+        System.out.println("FOUNDED USER BY ID:");
+
+        User foundedUserById = userService.getUserById(12);
+
+        if(foundedUserById != null){
+            System.out.println(foundedUserById);
+        } else{
+            System.out.println("User is not found");
+        }
+
+        System.out.println();
+
+        for(User user: users) {
+            System.out.println(user);
+        }
     }
 }
