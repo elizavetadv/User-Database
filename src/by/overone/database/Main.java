@@ -42,6 +42,18 @@ public class Main {
 
         System.out.println();
 
+        System.out.println("FOUNDED USER BY FULL NAME:");
+
+        User foundedUserByFullName = userService.getUserByFullName("Elizabeth Davidovich");
+
+        if(foundedUserByFullName != null){
+            System.out.println(foundedUserByFullName);
+        } else{
+            System.out.println("User is not found");
+        }
+
+        System.out.println();
+
         for(User user: users) {
             System.out.println(user);
         }
