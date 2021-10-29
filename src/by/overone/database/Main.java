@@ -18,5 +18,14 @@ public class Main {
         } else{
             System.out.println("User is not found");
         }
+
+        System.out.println();
+
+        System.out.println("ADD:");
+
+        User addedUser = userService.addUser(new User("Elizabeth", "Davidovich", 18, "+375444592051"));
+        System.out.println(addedUser);
+        User addedUser1 = userService.addUser(new User("Nastya", "Kotobich", 21, "+375444123052"));
+        System.out.println(addedUser1);
     }
 }
